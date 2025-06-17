@@ -26,42 +26,106 @@
       </div>
     </div>
   </nav>
-   <div class="left-panel">
-    <div class="input-prompt">Enter your website, text or drop a file here</div>
-    <div class="input-sub">(Your QR Code will be generated automatically)</div>
-    <div class="upload-bar">
-      <a href="#">↥ Upload any file</a>
-      <div class="switch-container">
-        <div class="switch"></div>
-        <span>Scan tracking</span>
-      </div>
-    </div>
-  </div>
-  <div class="right-panel">
-    <div class="qr-code-preview"><img src="image/websiteQRCode_noFrame.png" alt=""/></div>
-    <div class="frame-section">
-      <div class="frame-header">
-        FRAME <span>NEW!</span>
-      </div>
-      <!-- frame-options updated with unique icons -->
-<div class="frame-options">
-  <div class="frame-option"><img src="image/websiteQRCode_noFrame.png" alt="No Frame"/></div>
-  <div class="frame-option"><img src="" alt="Scan Me Frame 1"/></div>
-  <div class="frame-option"><img src="https://img.icons8.com/external-others-iconmarket/64/external-qr-code-user-interface-others-iconmarket.png" alt="Scan Me Frame 2"/></div>
-  <div class="frame-option"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-qr-code-technology-flatart-icons-outline-flatarticons.png" alt="Scan Me Frame 3"/></div>
-  <div class="frame-option"><img src="https://img.icons8.com/ios/50/qr-code--v1.png" alt="Scan Me Frame 4"/></div>
-  <div class="frame-option"><img src="https://img.icons8.com/fluency-systems-filled/48/qr-code.png" alt="Scan Me Frame 5"/></div>
-  <div class="frame-option"><img src="https://img.icons8.com/material-outlined/48/qr-code.png" alt="Scan Me Frame 6"/></div>
-  <div class="frame-option"><img src="https://img.icons8.com/dotty/80/qr-code.png" alt="Scan Me Frame 7"/></div>
-</div>
+   
 
+  <main class="main-wrapper">
+    <!-- Left Section -->
+    <div class="main-container">
+      <div class="card">
+        <div class="options">
+          <div class="row">
+            <div class="option">🌐 URL</div>
+            <div class="option">👤 VCARD</div>
+            <div class="option">📄 TEXT</div>
+            <div class="option">✉ E-MAIL</div>
+            <div class="option">💬 SMS</div>
+          </div>
+          <div class="row">
+            <div class="option">📶 WIFI</div>
+            <div class="option">₿ BITCOIN</div>
+            <div class="option">🐦 TWITTER</div>
+            <div class="option">👍 FACEBOOK</div>
+            <div class="option">📎 PDF</div>
+          </div>
+          <div class="row">
+            <div class="option">🎵 MP3</div>
+            <div class="option">🛒 APP STORES</div>
+            <div class="option">🖼 IMAGES</div>
+            <div class="option">🔳 2D BARCODES</div>
+          </div>
+        </div>
+
+        <div class="input-section">
+          <p>Enter your website or text</p>
+          <button class="generate-btn">GENERATE QR CODE</button>
+          <p class="upload">📤 <a href="#">Upload any file</a> (.jpg, .pdf, .mp3, .docx, .pptx)</p>
+          <div class="toggle">
+            <span>Scan tracking</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="dropdown">SHAPE & COLOR</div>
-    <div class="dropdown">LOGO</div>
-    <div class="download-section">
-      <div class="download-btn">DOWNLOAD<br><small>JPG</small></div>
-      <div class="download-btn disabled">PRINT QUALITY<br><small>SVG/EPS</small></div>
+
+    <!-- Right Section (QR Preview) -->
+    <div class="qr-preview-section">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" alt="QR Code" class="qr-image"/>
+
+      <div class="frame-section">
+        <div class="section-title">FRAME <span class="new-badge">NEW!</span></div>
+        <div class="frame-grid">
+          <div class="frame active"><img src="image/qrcg-scan-me-bottom-frame.png" alt="Frame 0"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-bubble-frame.png" alt="Frame 1"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-bottom-tooltip.png" alt="Frame 2"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-solution-video-frame.png" alt="Frame 3"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-arrow-frame.png" alt="Frame 4"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-basic-frame.png" alt="Frame 5"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-shopping-bag-frame.png" alt="Frame 6"></div>
+          <div class="frame"><img src="image/qrcg-scan-me-ribbon-frame.png" alt="Frame 7"></div>
+          
+        </div>
+      </div>
+
+      <div class="dropdown closed">SHAPE & COLOR</div>
+      <div class="dropdown closed">LOGO</div>
+
+      <div class="download-btn">⬇ DOWNLOAD</div>
+    </div>
+  </main>
+
+  <div class="accessibility-icon">🧑‍🦽</div>
+  <div class="banner">
+    <span class="new-badge">NEW</span>
+    QR Code creation built into your application
+    <a href="#" class="api-button">Use our API</a>
+  </div>
+
+  <div class="tip-section">
+    <span class="pro-badge">PRO TIP</span>
+    Scroll down to see <span class="highlight">creative QR Codes ideas</span>
+  </div>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="image/business-card-for-sample_large.png" alt="Business Card">
+      <p>Business Cards</p>
+    </div>
+    <div class="card">
+      <img src="image/flyer-for-sample_large.png" alt="Flyers">
+      <p>Flyers</p>
+    </div>
+    <div class="card">
+      <img src="image/brochure-for-sample_large.png" alt="Brochures">
+      <p>Brochures</p>
+    </div>
+    <div class="card view-more">
+      <p>Check out more <span class="highlight">creative</span> QR Code examples</p>
+      <a href="#" class="view-link">VIEW MORE →</a>
     </div>
   </div>
+
 </body>
 </html>
